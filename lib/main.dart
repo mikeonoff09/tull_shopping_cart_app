@@ -2,7 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
-import 'package:tull_shopping_cart_app/blocs/bloc/cart_bloc.dart';
+
+import 'blocs/bloc/cart_bloc.dart';
+import 'pages/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,16 +21,10 @@ class MyApp extends StatelessWidget {
       create: (BuildContext context) {},
       child: MultiBlocProvider(
         providers: [BlocProvider(create: (_) => CartBloc())],
-        child: MaterialApp(
+        child: const MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Material App',
-          home: Scaffold(
-            appBar: AppBar(
-              title: const Text('Material App Bar'),
-            ),
-            body: const Center(
-              child: Text('Hello World'),
-            ),
-          ),
+          home: HomePage(),
         ),
       ),
     );

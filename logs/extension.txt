@@ -628,3 +628,6 @@ NO_PROXY: undefined
 [9:05:08 PM] [General] [Info] Pubspec C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app\pubspec.yaml was modified
 [9:05:09 PM] [General] [Info] Found 1 folders requiring "pub get":
     C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app
+[10:07:52 PM] [General] [Info] Pubspec C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app\pubspec.yaml was modified
+[10:07:53 PM] [General] [Info] Found 1 folders requiring "pub get":
+    C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app
