@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tull_shopping_cart_app/blocs/bloc/cart_bloc.dart';
-import 'package:tull_shopping_cart_app/widgets/item_carrito_widget.dart';
+
+import '../blocs/cart_bloc/cart_bloc.dart';
+import '../models/producto_model.dart';
+import '../widgets/item_carrito_widget.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({Key key}) : super(key: key);
@@ -13,6 +15,13 @@ class CartPage extends StatelessWidget {
         color: Theme.of(context).backgroundColor,
         child: Column(
           children: [
+            Container(
+              padding: const EdgeInsets.all(16),
+              child: const Text(
+                'Carrito de compras',
+                style: TextStyle(fontSize: 24),
+              ),
+            ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(2),
@@ -32,11 +41,11 @@ Widget _procederAlPago(BuildContext context) {
   return BlocBuilder<CartBloc, CartState>(
     builder: (context, state) {
       return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      width: MediaQuery.of(context).size.width,
-      child: ElevatedButton(
-        child: const Text('Proceder al Pago'),
-        onPressed: () {
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        width: MediaQuery.of(context).size.width,
+        child: ElevatedButton(
+          child: const Text('Proceder al Pago'),
+          onPressed: () {
             if (state.total > 0) {
               // Navigator.push(
               //   context,
@@ -44,12 +53,12 @@ Widget _procederAlPago(BuildContext context) {
               // );
             } else {
               Navigator.pop(context);
-              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Agregue productos al carrito')));
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  content: Text('Agregue productos al carrito')));
             }
-        },
-        
-      ),
-    );
+          },
+        ),
+      );
     },
   );
 }
@@ -58,12 +67,12 @@ Widget _total() {
   return BlocBuilder<CartBloc, CartState>(
     builder: (context, state) {
       return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            'Total: \$  ${state.total.toStringAsFixed(2)}',
-            style: Theme.of(context).textTheme.headline5,
-          ),
-        );
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+          'Total: \$  ${state.total.toStringAsFixed(2)}',
+          style: Theme.of(context).textTheme.headline5,
+        ),
+      );
     },
   );
 }
@@ -103,20 +112,25 @@ showFullAlertDialog(BuildContext context,
 }
 
 class _CartList extends StatelessWidget {
-
-  
   @override
   Widget build(BuildContext context) {
     CartBloc cartBloc = BlocProvider.of<CartBloc>(context);
     return BlocBuilder<CartBloc, CartState>(
       builder: (context, state) {
+        print(state.activeCart.status);
         return ListView.builder(
-          itemCount: state.numberOfProductsInActiveCart,
-          itemBuilder: (context, index) => ItemCarrito(
-            cartBloc.findProductById(state.activeCartProductCarts[index].productId),
-            state.activeCartProductCarts[index].quantity,
-          ),
-        );
+            itemCount: state.activeCartProductCarts.length,
+            itemBuilder: (context, index) {
+              Product product = cartBloc.findProductById(
+                  state.activeCartProductCarts[index].productId);
+              if (product.isEmpty()) {
+                return Container();
+              }
+              return ItemCarrito(
+                product,
+                state.activeCartProductCarts[index].quantity,
+              );
+            });
       },
     );
   }

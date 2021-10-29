@@ -1,23 +1,23 @@
 import 'dart:convert';
 
-List<Product> productFromJson(String str) =>
+List<Product> productsFromJson(String str) =>
     List<Product>.from(json.decode(str).map((x) => Product.fromJson(x)));
 
-String productToJson(List<Product> data) =>
+String productsToJson(List<Product> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Product {
-  Product({this.id, this.nombre, this.sku, this.description, this.price});
+  Product({this.id, this.name, this.sku, this.description, this.price});
 
   int id;
-  String nombre;
+  String name;
   int sku;
   String description;
   double price;
 
   factory Product.fromJson(Map<String, dynamic> json) => Product(
         id: json["id"],
-        nombre: json["nombre"],
+        name: json["name"],
         sku: json["sku"],
         description: json["description"],
         price: json["price"],
@@ -25,7 +25,7 @@ class Product {
 
   Map<String, dynamic> toJson() => {
         "id": id,
-        "nombre": nombre,
+        "name": name,
         "sku": sku,
         "description": description,
         "price": price,
@@ -37,6 +37,8 @@ class Product {
   }
 
   bool isEmpty() {
-    return id == null && nombre == null && description == null ? true : false;
+    return id == null && name == null && description == null ? true : false;
   }
+
+  bool isNotEmpty() => !isEmpty();
 }

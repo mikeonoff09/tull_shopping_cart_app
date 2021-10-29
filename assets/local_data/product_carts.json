@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "product_id": 1,
+        "cart_id": 1,
+        "quantity": 2
+    },
+    {
+        "id":1,
+        "product_id": 3,
+        "cart_id": 1,
+        "quantity": 3
+    },
+    {
+        "id":1,
+        "product_id": 2,
+        "cart_id": 54,
+        "quantity": 3
+    },
+    {
+        "id":1,
+        "product_id": 4,
+        "cart_id": 54,
+        "quantity": 2
+    }
+]

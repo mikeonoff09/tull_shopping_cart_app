@@ -12,14 +12,15 @@ class BorderIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: width,
-        height: height,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          // color: Theme.of(context).backgroundColor,
-          borderRadius: BorderRadius.circular(0),
-        ),
-        padding: padding ?? const EdgeInsets.all(8.0),
-        child: Center(child: child));
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        // color: Theme.of(context).backgroundColor,
+        borderRadius: BorderRadius.circular(0),
+      ),
+      padding: padding ?? const EdgeInsets.all(8.0),
+      child: Center(child: child),
+    );
   }
 }

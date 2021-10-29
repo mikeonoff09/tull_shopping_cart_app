@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-List<Cart> cartFromJson(String str) =>
+List<Cart> cartsFromJson(String str) =>
     List<Cart>.from(json.decode(str).map((x) => Cart.fromJson(x)));
 
-String cartToJson(List<Cart> data) =>
+String cartsToJson(List<Cart> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Cart {

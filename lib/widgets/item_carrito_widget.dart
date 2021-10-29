@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
-import 'package:tull_shopping_cart_app/blocs/bloc/cart_bloc.dart';
-import 'package:tull_shopping_cart_app/models/cart_model.dart';
-import 'package:tull_shopping_cart_app/models/producto_model.dart';
+
+import '../blocs/cart_bloc/cart_bloc.dart';
+import '../models/producto_model.dart';
 
 // ignore: must_be_immutable
 class ItemCarrito extends StatefulWidget {
-  // final CartItemState _cartItemState;
   final Product producto;
   int _cantidad;
-  // final TextEditingController _newcantidadController = TextEditingController();
 
   ItemCarrito(this.producto, this._cantidad, {Key key}) : super(key: key);
 
@@ -21,9 +18,7 @@ class ItemCarrito extends StatefulWidget {
 class _ItemCarritoState extends State<ItemCarrito> {
   @override
   Widget build(BuildContext context) {
-    final existencia = widget.producto.sku;
-    // print(' Cantidad : ${widget.producto.productoExistencia}');
-    final carrito = Provider.of<Cart>(context, listen: false);
+    // final existencia = widget.producto.sku;
 
     CartBloc cartBloc = BlocProvider.of<CartBloc>(context);
 
@@ -54,10 +49,12 @@ class _ItemCarritoState extends State<ItemCarrito> {
                 icon: const Icon(Icons.remove),
                 onPressed: () {
                   if (widget._cantidad > 1) {
-                    cartBloc.editQuantity(widget.producto.id, widget._cantidad - 1);
+                    cartBloc.editQuantity(
+                        widget.producto.id, widget._cantidad - 1);
                     setState(() {
                       widget._cantidad--;
                     });
+                    cartBloc.computeTotal();
                   }
                 },
               ),
@@ -74,9 +71,11 @@ class _ItemCarritoState extends State<ItemCarrito> {
               child: IconButton(
                 icon: const Icon(Icons.add),
                 onPressed: () {
-                  if (existencia > widget._cantidad) {
-                    cartBloc.editQuantity(widget.producto.id, widget._cantidad + 1);
+                  if (widget.producto.sku > widget._cantidad) {
+                    cartBloc.editQuantity(
+                        widget.producto.id, widget._cantidad + 1);
                     setState(() {
+                      cartBloc.computeTotal();
                       widget._cantidad++;
                     });
                   }
@@ -89,7 +88,7 @@ class _ItemCarritoState extends State<ItemCarrito> {
           child: Padding(
             padding: const EdgeInsets.only(left: 8.0),
             child: Text(
-              '\$' + widget.producto.price.toString() + ' c/u',
+              '\$' + widget.producto.price.toStringAsFixed(2) + ' c/u',
               style: Theme.of(context).textTheme.subtitle1,
             ),
           ),
@@ -115,11 +114,10 @@ class _ItemCarritoState extends State<ItemCarrito> {
             ),
             Expanded(flex: 2, child: descriptionWidget),
             IconButton(
-              icon: const Icon(Icons.clear),
+              icon: const Icon(Icons.clear,color: Colors.red,),
               onPressed: () {
                 cartBloc.removeCartItemFromCart(widget.producto.id);
               },
-              // onPressed: () => cartBloc.removeCartItemOfCart(_cartItemState),
             )
           ],
         ),

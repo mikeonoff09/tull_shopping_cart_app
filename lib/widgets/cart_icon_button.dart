@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../blocs/bloc/cart_bloc.dart';
+import '../blocs/cart_bloc/cart_bloc.dart';
 import 'border_icon.dart';
 
 class CartIconButton extends StatelessWidget {
@@ -13,6 +13,7 @@ class CartIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<CartBloc, CartState>(
       builder: (context, state) {
+        print(state.activeCartProductCarts.length);
         return Stack(
           children: <Widget>[
             const BorderIcon(
@@ -27,7 +28,7 @@ class CartIconButton extends StatelessWidget {
                 backgroundColor: Colors.red[700],
                 maxRadius: 11,
                 child: Text(
-                  state.numberOfProductsInActiveCart.toString(),
+                  state.activeCartProductCarts.length.toString(),
                   style: const TextStyle(color: Colors.white, fontSize: 12),
                 ),
               ),

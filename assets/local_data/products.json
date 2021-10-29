@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Martillo",
+        "sku": 5,
+        "description": "Martillo Stanly",
+        "price": 12.50
+    },
+    {
+        "id": 2,
+        "name": "Serrucho",
+        "sku": 5,
+        "description": "Serrucho Stanly",
+        "price": 8.60
+    },
+    {
+        "id": 3,
+        "name": "Cemento",
+        "sku": 5,
+        "description": "40 Kg de cemento Guapan",
+        "price": 30.55
+    },
+    {
+        "id": 4,
+        "name": "Pintura",
+        "sku": 5,
+        "description": "Pintura blanca pintuco, 1 litro",
+        "price": 5.25
+    },
+    {
+        "id": 5,
+        "name": "Taladro",
+        "sku": 5,
+        "description": "Taladro Dewalt",
+        "price": 75.45
+    },
+    {
+        "id": 6,
+        "name": "Martillo",
+        "sku": 5,
+        "description": "Martillo Stanly",
+        "price": 25.50
+    }
+]
