@@ -36,3 +36,16 @@ Thu Oct 28 2021 [22:38:57 GMT-0500 (Ecuador Time)] Log file started
 [10:40:38 PM] [FlutterDaemon] [Info] <== [{"id":"5","result":{"platforms":["windows","ios","android","web"]}}]
 [10:40:38 PM] [General] [Warn] Did not find session a5dadaf8-8c9d-40a7-8f87-0c694fc9af5a to handle dart.progressStart. There were 0 sessions:
 [10:40:38 PM] [General] [Warn] Event will be queued and processed when the session start event fires
+[11:20:24 PM] [FlutterDaemon] [Info] ==> [{"id":"6","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app"}}]
+[11:20:24 PM] [FlutterDaemon] [Info] <== [{"id":"6","result":{"platforms":["windows","ios","android","web"]}}]
+[11:20:24 PM] [FlutterDaemon] [Info] ==> [{"id":"7","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app"}}]
+[11:20:24 PM] [FlutterDaemon] [Info] <== [{"id":"7","result":{"platforms":["windows","ios","android","web"]}}]
+[11:20:24 PM] [General] [Warn] Did not find session 9abdf890-6dbc-4fd0-b61e-4cebc7b052b5 to handle dart.progressStart. There were 0 sessions:
+[11:20:24 PM] [General] [Warn] Event will be queued and processed when the session start event fires
+[12:08:13 AM] [General] [Warn] Did not find session 9519378d-b60a-4a8f-8e13-bd9b11ede7a8 to handle dart.progressStart. There were 1 sessions:
+  9abdf890-6dbc-4fd0-b61e-4cebc7b052b5
+[12:08:13 AM] [General] [Warn] Event will be queued and processed when the session start event fires
+[12:08:26 AM] [General] [Warn] Did not find session 22479dd7-7d65-4fe9-a704-37dfd26aad48 to handle dart.progressStart. There were 2 sessions:
+  9abdf890-6dbc-4fd0-b61e-4cebc7b052b5
+  9519378d-b60a-4a8f-8e13-bd9b11ede7a8
+[12:08:26 AM] [General] [Warn] Event will be queued and processed when the session start event fires

@@ -1,0 +1,181 @@
+[11:20:24 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--dart-define=flutter.inspector.structuredErrors=true","--web-allow-expose-url","--devtools-server-address","http://127.0.0.1:9100/","--target","lib\\main.dart"]
+[11:20:24 PM]: ..  in C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app
+[11:20:24 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[11:20:24 PM]: PID: 24332
+[11:20:26 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":5460}}]
+[11:20:26 PM]: <== [{"event":"app.start","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","deviceId":"emulator-5554","directory":"C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app","supportsRestart":true,"launchMode":"run"}}]
+[11:20:26 PM]: <== Launching lib\main.dart on Android SDK built for x86 in debug mode...
+[11:20:26 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[11:20:43 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"0","progressId":null,"finished":true}}]
+[11:20:44 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[11:20:44 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app.apk...","finished":false}}]
+[11:20:45 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"1","progressId":null,"finished":true}}]
+[11:20:46 PM]: <== W/FlutterActivityAndFragmentDelegate( 4474): A splash screen was provided to Flutter, but this is deprecated. See flutter.dev/go/android-splash-migration for migration steps.
+[11:20:47 PM]: <== [{"event":"app.debugPort","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","port":53361,"wsUri":"ws://127.0.0.1:53361/fuNU4XqYbOY=/ws","baseUri":"file:///data/user/0/com.miguel.lara.tull_shopping_cart_app/code_cache/tull_shopping_cart_appSFDTUO/tull_shopping_cart_app/"}}]
+[11:20:47 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"2","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[11:20:47 PM]: <== I/TetheringManager( 4474): registerTetheringEventCallback:com.miguel.lara.tull_shopping_cart_app
+[11:20:47 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"2","progressId":null,"finished":true}}]
+[11:20:47 PM]: <== [{"event":"app.started","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0"}}]
+[11:20:47 PM]: ==> [{"id":"1","method":"app.callServiceExtension","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","methodName":"ext.flutter.inspector.structuredErrors","params":{"enabled":true}}}]
+[11:20:48 PM]: <== [{"id":"1","result":{"enabled":"true","type":"_extensionType","method":"ext.flutter.inspector.structuredErrors"}}]
+[11:20:48 PM]: <== I/flutter ( 4474): 0
+[11:20:49 PM]: <== I/flutter ( 4474): 0
+[11:20:49 PM]: <== I/flutter ( 4474): 2
+[11:21:22 PM]: ==> [{"id":"2","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[11:21:22 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"3","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[11:21:22 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"4","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[11:21:22 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"4","progressId":null,"finished":true}}]
+[11:21:22 PM]: <== I/flutter ( 4474): 2
+[11:21:23 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"3","progressId":"hot.reload","finished":true}}]
+[11:21:23 PM]: <== Reloaded 1 of 601 libraries in 958ms.
+[11:21:23 PM]: <== [{"id":"2","result":{"code":0,"message":"Reloaded 1 of 601 libraries"}}]
+[11:35:53 PM]: ==> [{"id":"3","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[11:35:53 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"5","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[11:35:53 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"6","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[11:35:53 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"6","progressId":null,"finished":true}}]
+[11:35:53 PM]: <== I/flutter ( 4474): 2
+[11:35:54 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"5","progressId":"hot.reload","finished":true}}]
+[11:35:54 PM]: <== Reloaded 1 of 601 libraries in 769ms.
+[11:35:54 PM]: <== [{"id":"3","result":{"code":0,"message":"Reloaded 1 of 601 libraries"}}]
+[11:36:39 PM]: ==> [{"id":"4","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[11:36:39 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"7","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[11:36:39 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"8","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[11:36:39 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"8","progressId":null,"finished":true}}]
+[11:36:40 PM]: <== I/flutter ( 4474): 2
+[11:36:40 PM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"7","progressId":"hot.reload","finished":true}}]
+[11:36:40 PM]: <== Reloaded 2 of 601 libraries in 484ms.
+[11:36:40 PM]: <== [{"id":"4","result":{"code":0,"message":"Reloaded 2 of 601 libraries"}}]
+[11:36:44 PM]: <== W/IInputConnectionWrapper( 4474): getSelectedText on inactive InputConnection
+[11:36:44 PM]: <== W/IInputConnectionWrapper( 4474): requestCursorAnchorInfo on inactive InputConnection
+[11:36:44 PM]: <== W/IInputConnectionWrapper( 4474): getTextBeforeCursor on inactive InputConnection
+[11:36:44 PM]: <== W/IInputConnectionWrapper( 4474): getTextBeforeCursor on inactive InputConnection
+[11:36:44 PM]: <== W/IInputConnectionWrapper( 4474): getTextBeforeCursor on inactive InputConnection
+[11:36:44 PM]: <== W/IInputConnectionWrapper( 4474): getTextBeforeCursor on inactive InputConnection
+[11:36:44 PM]: <== D/InputConnectionAdaptor( 4474): The input method toggled cursor monitoring on
+[11:36:48 PM]: <== I/flutter ( 4474): pending
+[11:36:52 PM]: <== I/flutter ( 4474): 2
+[11:36:52 PM]: <== I/flutter ( 4474): pending
+[11:36:53 PM]: <== I/flutter ( 4474): 2
+[11:36:53 PM]: <== I/flutter ( 4474): pending
+[11:36:53 PM]: <== I/flutter ( 4474): 2
+[11:36:53 PM]: <== I/flutter ( 4474): pending
+[11:36:54 PM]: <== I/flutter ( 4474): 2
+[11:36:54 PM]: <== I/flutter ( 4474): pending
+[11:36:54 PM]: <== I/flutter ( 4474): 2
+[11:36:54 PM]: <== I/flutter ( 4474): pending
+[11:36:54 PM]: <== I/flutter ( 4474): 2
+[11:36:54 PM]: <== I/flutter ( 4474): pending
+[11:36:55 PM]: <== I/flutter ( 4474): 2
+[11:36:55 PM]: <== I/flutter ( 4474): pending
+[11:36:55 PM]: <== I/flutter ( 4474): 2
+[11:36:55 PM]: <== I/flutter ( 4474): pending
+[11:36:56 PM]: <== I/flutter ( 4474): 2
+[11:36:56 PM]: <== I/flutter ( 4474): pending
+[11:36:56 PM]: <== I/flutter ( 4474): 2
+[11:36:56 PM]: <== I/flutter ( 4474): pending
+[11:36:57 PM]: <== I/flutter ( 4474): 2
+[11:36:57 PM]: <== I/flutter ( 4474): pending
+[11:36:57 PM]: <== I/flutter ( 4474): 2
+[11:36:57 PM]: <== I/flutter ( 4474): pending
+[11:36:57 PM]: <== I/flutter ( 4474): 2
+[11:36:57 PM]: <== I/flutter ( 4474): pending
+[11:36:57 PM]: <== I/flutter ( 4474): 2
+[11:36:57 PM]: <== I/flutter ( 4474): pending
+[11:36:58 PM]: <== I/flutter ( 4474): 2
+[11:36:58 PM]: <== I/flutter ( 4474): pending
+[11:36:58 PM]: <== I/flutter ( 4474): 2
+[11:36:58 PM]: <== I/flutter ( 4474): pending
+[11:36:59 PM]: <== I/flutter ( 4474): 2
+[11:36:59 PM]: <== I/flutter ( 4474): pending
+[11:36:59 PM]: <== I/flutter ( 4474): 2
+[11:36:59 PM]: <== I/flutter ( 4474): pending
+[11:37:06 PM]: <== W/IInputConnectionWrapper( 4474): getSelectedText on inactive InputConnection
+[11:37:06 PM]: <== W/IInputConnectionWrapper( 4474): requestCursorAnchorInfo on inactive InputConnection
+[11:37:06 PM]: <== W/IInputConnectionWrapper( 4474): getTextBeforeCursor on inactive InputConnection
+[11:37:06 PM]: <== W/IInputConnectionWrapper( 4474): getTextBeforeCursor on inactive InputConnection
+[11:37:06 PM]: <== D/InputConnectionAdaptor( 4474): The input method toggled cursor monitoring on
+[12:06:03 AM]: ==> [{"id":"5","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:06:03 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"9","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:06:03 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"10","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:06:03 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"10","progressId":null,"finished":true}}]
+[12:06:03 AM]: <== I/flutter ( 4474): 2
+[12:06:03 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"9","progressId":"hot.reload","finished":true}}]
+[12:06:03 AM]: <== Reloaded 0 libraries in 111ms.
+[12:06:03 AM]: <== [{"id":"5","result":{"code":0,"message":"Reloaded 0 libraries"}}]
+[12:08:01 AM]: ==> [{"id":"6","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:08:01 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"11","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:08:01 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"12","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:08:01 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"12","progressId":null,"finished":true}}]
+[12:08:01 AM]: <== I/flutter ( 4474): 2
+[12:08:01 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"11","progressId":"hot.reload","finished":true}}]
+[12:08:01 AM]: <== Reloaded 0 libraries in 98ms.
+[12:08:01 AM]: <== [{"id":"6","result":{"code":0,"message":"Reloaded 0 libraries"}}]
+[12:08:06 AM]: ==> [{"id":"7","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:08:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"13","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:08:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"14","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:08:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"14","progressId":null,"finished":true}}]
+[12:08:06 AM]: <== I/flutter ( 4474): 2
+[12:08:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"13","progressId":"hot.reload","finished":true}}]
+[12:08:06 AM]: <== Reloaded 0 libraries in 91ms.
+[12:08:06 AM]: <== [{"id":"7","result":{"code":0,"message":"Reloaded 0 libraries"}}]
+[12:08:19 AM]: ==> [{"id":"8","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":true,"pause":false,"reason":"manual"}}]
+[12:08:19 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"15","progressId":"hot.restart","message":"Performing hot restart...","finished":false}}]
+[12:08:19 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"16","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:08:21 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"16","progressId":null,"finished":true}}]
+[12:08:21 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"15","progressId":"hot.restart","finished":true}}]
+[12:08:21 AM]: <== Restarted application in 2,380ms.
+[12:08:21 AM]: <== [{"id":"8","result":{"code":0,"message":""}}]
+[12:08:21 AM]: ==> [{"id":"9","method":"app.callServiceExtension","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","methodName":"ext.flutter.inspector.structuredErrors","params":{"enabled":true}}}]
+[12:08:21 AM]: <== [{"id":"9","result":{"enabled":"true","type":"_extensionType","method":"ext.flutter.inspector.structuredErrors"}}]
+[12:08:21 AM]: <== W/GooglePlayServicesUtil( 4474): Google Play Store is missing.
+[12:08:21 AM]: <== E/GooglePlayServicesUtil( 4474): GooglePlayServices not available due to error 9
+[12:08:21 AM]: <== W/Firestore( 4474): (23.0.4) [GrpcCallProvider]: Failed to update ssl context: com.google.android.gms.common.GooglePlayServicesNotAvailableException
+[12:08:22 AM]: <== I/flutter ( 4474): 0
+[12:08:23 AM]: <== I/flutter ( 4474): 2
+[12:08:56 AM]: <== I/flutter ( 4474): 2
+[12:17:40 AM]: <== I/flutter ( 4474): pending
+[12:18:58 AM]: ==> [{"id":"10","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:18:58 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"17","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:18:58 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"18","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:18:58 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"18","progressId":null,"finished":true}}]
+[12:18:58 AM]: <== I/flutter ( 4474): 2
+[12:18:58 AM]: <== I/flutter ( 4474): pending
+[12:18:58 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"17","progressId":"hot.reload","finished":true}}]
+[12:18:58 AM]: <== Reloaded 0 libraries in 158ms.
+[12:18:58 AM]: <== [{"id":"10","result":{"code":0,"message":"Reloaded 0 libraries"}}]
+[12:20:06 AM]: ==> [{"id":"11","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:20:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"19","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:20:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"20","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:20:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"20","progressId":null,"finished":true}}]
+[12:20:06 AM]: <== I/flutter ( 4474): 2
+[12:20:06 AM]: <== I/flutter ( 4474): pending
+[12:20:06 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"19","progressId":"hot.reload","finished":true}}]
+[12:20:06 AM]: <== Reloaded 0 libraries in 119ms.
+[12:20:06 AM]: <== [{"id":"11","result":{"code":0,"message":"Reloaded 0 libraries"}}]
+[12:20:17 AM]: ==> [{"id":"12","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:20:18 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"21","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:20:18 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"22","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:20:18 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"22","progressId":null,"finished":true}}]
+[12:20:18 AM]: <== I/flutter ( 4474): 2
+[12:20:18 AM]: <== I/flutter ( 4474): pending
+[12:20:18 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"21","progressId":"hot.reload","finished":true}}]
+[12:20:18 AM]: <== Reloaded 0 libraries in 124ms.
+[12:20:18 AM]: <== [{"id":"12","result":{"code":0,"message":"Reloaded 0 libraries"}}]
+[12:21:10 AM]: ==> [{"id":"13","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:21:10 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"23","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:21:10 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"24","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:21:11 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"24","progressId":null,"finished":true}}]
+[12:21:11 AM]: <== I/flutter ( 4474): 2
+[12:21:11 AM]: <== I/flutter ( 4474): pending
+[12:21:11 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"23","progressId":"hot.reload","finished":true}}]
+[12:21:11 AM]: <== Reloaded 0 libraries in 123ms.
+[12:21:11 AM]: <== [{"id":"13","result":{"code":0,"message":"Reloaded 0 libraries"}}]
+[12:22:57 AM]: ==> [{"id":"14","method":"app.restart","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[12:22:57 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"25","progressId":"hot.reload","message":"Performing hot reload...","finished":false}}]
+[12:22:57 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"26","progressId":null,"message":"Syncing files to device Android SDK built for x86...","finished":false}}]
+[12:22:57 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"26","progressId":null,"finished":true}}]
+[12:22:57 AM]: <== I/flutter ( 4474): 2
+[12:22:57 AM]: <== I/flutter ( 4474): pending
+[12:22:57 AM]: <== [{"event":"app.progress","params":{"appId":"1ddccc1d-4fb1-4f51-a85a-49126f6be1b0","id":"25","progressId":"hot.reload","finished":true}}]
+[12:22:57 AM]: <== Reloaded 0 libraries in 112ms.
+[12:22:57 AM]: <== [{"id":"14","result":{"code":0,"message":"Reloaded 0 libraries"}}]
