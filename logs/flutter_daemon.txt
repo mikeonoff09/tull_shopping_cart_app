@@ -24,3 +24,15 @@ Thu Oct 28 2021 [22:38:57 GMT-0500 (Ecuador Time)] Log file started
 [10:39:01 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
 [10:39:01 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"10.1_WXGA_Tablet_API_30","name":"10.1  WXGA (Tablet) API 30","category":"mobile","platformType":"android"},{"id":"Nexus_7_API_30","name":"Nexus 7 API 30","category":"mobile","platformType":"android"},{"id":"Pixel_3_XL_API_30","name":"Pixel 3 XL API 30","category":"mobile","platformType":"android"},{"id":"Pixel_API_24","name":"Pixel API 24","category":"mobile","platformType":"android"}]}]
 [10:39:01 PM] [FlutterDaemon] [Info] <== [{"id":"2"}]
+[10:39:05 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"windows","name":"Windows","platform":"windows-x64","emulator":false,"category":"desktop","platformType":"windows","ephemeral":false,"emulatorId":null}}]
+[10:39:05 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app"}}]
+[10:39:05 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["windows","ios","android","web"]}}]
+[10:39:05 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"Android SDK built for x86","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"Pixel_3_XL_API_30"}}]
+[10:39:05 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"chrome","name":"Chrome","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null}}]
+[10:39:05 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null}}]
+[10:40:38 PM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app"}}]
+[10:40:38 PM] [FlutterDaemon] [Info] <== [{"id":"4","result":{"platforms":["windows","ios","android","web"]}}]
+[10:40:38 PM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app"}}]
+[10:40:38 PM] [FlutterDaemon] [Info] <== [{"id":"5","result":{"platforms":["windows","ios","android","web"]}}]
+[10:40:38 PM] [General] [Warn] Did not find session a5dadaf8-8c9d-40a7-8f87-0c694fc9af5a to handle dart.progressStart. There were 0 sessions:
+[10:40:38 PM] [General] [Warn] Event will be queued and processed when the session start event fires

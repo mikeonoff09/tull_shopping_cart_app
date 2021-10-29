@@ -34,7 +34,6 @@ class CartBloc extends Bloc<CartEvent, CartState> {
     // print(carts)
     if (carts != null) {
       for (var i = carts.length - 1; i > 0; i--) {
-        // print(i);
         // es mas probable que el carrito "pending" est'e al final
         if (carts[i]?.status == "pending") {
           add(OnActiveCartChanged(carts[i]));
@@ -56,9 +55,6 @@ class CartBloc extends Bloc<CartEvent, CartState> {
         activeProductCarts.add(item);
       }
     }
-    // add(OnNumberOfProductsInActiveCartChanged(activeProductCarts.length));
-    print('activeProductCarts.toString()');
-    print(activeProductCarts.toString());
     add(OnActiveCartProductCartsChanged(activeProductCarts));
     add(OnProductCartsChanged(productCarts));
   }
@@ -68,13 +64,11 @@ class CartBloc extends Bloc<CartEvent, CartState> {
     List<Product> prods = state.products;
     double total = 0;
     for (var item in prodCart) {
-      print(item);
       int cantidad = item.quantity;
       double precio =
           prods.firstWhere((element) => element.id == item.productId).price;
       total += cantidad * precio;
     }
-    print(total);
     add(OnTotalChanged(total));
   }
 
@@ -104,7 +98,6 @@ class CartBloc extends Bloc<CartEvent, CartState> {
 
   void removeCartItemFromCart(int productId) {
     List<ProductCart> productCarts = state.activeCartProductCarts;
-    // List<Product> prods = state.productsInActiveCart;
 
     int index =
         productCarts.indexWhere((element) => element.productId == productId);
@@ -124,7 +117,6 @@ class CartBloc extends Bloc<CartEvent, CartState> {
       for (var item in state.activeCartProductCarts) {
         if (item.id == productId) {
           isOnCart = true;
-          // add(event)
           break;
         }
       }

@@ -235,3 +235,71 @@ HTTP_PROXY: undefined
 NO_PROXY: undefined
 [10:38:59 PM] [General] [Info] Analyzer:Startup timing: 1064ms
 [10:38:59 PM] [General] [Info] devtools version 2.7.0 appears to be latest so returning Valid
+[10:39:05 PM] [General] [Info] Checking 1 projects for supported platforms
+[10:39:05 PM] [General] [Info] Supported platforms for the workspace are windows, ios, android, web
+[10:39:05 PM] [General] [Info] Returning cached promise for getSupportedPlatforms()
+[10:39:10 PM] [General] [Info] Analyzer:FirstAnalysis timing: 7865ms
+[10:40:38 PM] [General] [Info] Starting debug session...
+[10:40:38 PM] [General] [Info]     workspace: C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app
+[10:40:38 PM] [General] [Info] Using found common entry point: C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app\lib\main.dart
+[10:40:38 PM] [General] [Info] Using workspace as cwd: C:\Users\jairo\Documents\PCToDriveBackup\GitHub\tull_shopping_cart_app
+[10:40:38 PM] [General] [Info] Detected launch project as Flutter
+[10:40:38 PM] [General] [Info] Using Flutter debug adapter for this session
+[10:40:38 PM] [General] [Info] Getting DevTools server address to pass to Flutter...
+[10:40:38 PM] [General] [Info] Checking for errors before launching
+[10:40:38 PM] [General] [Info] Debug session starting...
+    {
+        "noDebug": true,
+        "dartCodeDebugSessionID": "session-4b44",
+        "type": "dart",
+        "request": "launch",
+        "program": "C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app\\lib\\main.dart",
+        "cwd": "C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app",
+        "name": "Flutter (Pixel 3 XL API 30)",
+        "deviceId": "emulator-5554",
+        "deviceName": "Pixel 3 XL API 30 (android-x86)",
+        "toolEnv": {
+            "FLUTTER_HOST": "VSCode",
+            "PUB_ENVIRONMENT": "vscode.dart-code"
+        },
+        "sendLogsToClient": true,
+        "additionalProjectPaths": [
+            "C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app"
+        ],
+        "args": [],
+        "toolArgs": [
+            "-d",
+            "emulator-5554",
+            "--dart-define=flutter.inspector.structuredErrors=true",
+            "--web-allow-expose-url",
+            "--devtools-server-address",
+            "http://127.0.0.1:9100/"
+        ],
+        "vmServicePort": 0,
+        "dartSdkPath": "C:\\src\\flutter\\bin\\cache\\dart-sdk",
+        "vmServiceLogFile": "C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app\\logs\\observatory.txt",
+        "maxLogLineLength": 2000,
+        "pubTestLogFile": "C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shopping_cart_app\\logs\\pub_test.txt",
+        "debugSdkLibraries": true,
+        "debugExternalPackageLibraries": false,
+        "showDartDeveloperLogs": true,
+        "evaluateGettersInDebugViews": true,
+        "evaluateToStringInDebugViews": true,
+        "flutterSdkPath": "C:\\src\\flutter",
+        "useInspectorNotificationsForWidgetErrors": true,
+        "workspaceConfig": {
+            "startDevToolsServerEagerly": true,
+            "useLsp": true
+        },
+        "flutterRunLogFile": "C:\\Users\\jairo\\Documents\\PCToDriveBackup\\GitHub\\tull_shoppin…
+[10:40:38 PM] [General] [Info] Using flutter debugger for Flutter
+[10:40:38 PM] [General] [Info] Running debugger via node with c:\Users\jairo\.vscode\extensions\dart-code.dart-code-3.27.2\out\dist\debug.js    flutter
+[10:40:38 PM] [General] [Warn] Did not find session a5dadaf8-8c9d-40a7-8f87-0c694fc9af5a to handle dart.progressStart. There were 0 sessions:
+[10:40:38 PM] [General] [Warn] Event will be queued and processed when the session start event fires
+[10:40:38 PM] [General] [Info] Processing delayed event dart.progressStart for session a5dadaf8-8c9d-40a7-8f87-0c694fc9af5a
+[10:50:35 PM] [General] [Info] Using only available debug session
+[10:50:35 PM] [General] [Info] Exposing URL: http://127.0.0.1:57330/ck_l4MGTDCU%3D/
+[10:50:35 PM] [General] [Info] Mapping URL: http://127.0.0.1:57330/ck_l4MGTDCU%3D/
+[10:50:35 PM] [General] [Info] Mapped URL: http://127.0.0.1:57330/ck_l4MGTDCU%3D/
+[10:50:35 PM] [General] [Info] Final URI: http://127.0.0.1:57330/ck_l4MGTDCU%3D/
+[10:50:35 PM] [General] [Info] Final URL: http://127.0.0.1:57330/ck_l4MGTDCU%3D/

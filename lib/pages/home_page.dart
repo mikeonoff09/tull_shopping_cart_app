@@ -35,9 +35,6 @@ class _HomePageState extends State<HomePage> {
   Future<void> _cargarDatosLocales() async {
     CartBloc cartBloc = BlocProvider.of<CartBloc>(context);
 
-    // List<Cart> carts = await cargarCarts();
-    // List<Product> products = await cargarProductos();
-    // List<ProductCart> productCarts = await cargarProductCarts();
     cargarProductos().then((prods) {
       if (prods != null) {
         cartBloc.productsManager(prods);
@@ -47,7 +44,6 @@ class _HomePageState extends State<HomePage> {
           cartBloc.cartsManager(carts);
         }
         cargarProductCarts().then((productCarts) {
-          print(productCarts);
           if (productCarts != null) {
             cartBloc.productCartsManager(productCarts);
           }
@@ -93,9 +89,9 @@ class _HomePageState extends State<HomePage> {
                   List<Widget> wids = <Widget>[];
                   if (searchController?.text?.isNotEmpty ?? true) {
                     for (Product product in currentProducts) {
-                      wids.add(ProductWidget(product,
-                          key: Key(
-                              product.id.toString()))); // TODO: Product Widget
+                      wids.add(
+                        ProductWidget(product, key: Key(product.id.toString())),
+                      ); // TODO: Product Widget
                     }
                   } else {
                     wids =
@@ -178,7 +174,6 @@ class _HomePageState extends State<HomePage> {
         currentProducts = cartBloc.state.products;
       }
     } catch (e) {
-      print('error en la busqueda'); // for debugging
       currentProducts = cartBloc.state.products;
     }
     setState(() {});
@@ -198,9 +193,12 @@ class ProductWidget extends StatelessWidget {
     return ListTile(
       title: Text(product.name),
       subtitle: Text(product.description),
-      leading: Text("\$ ${product.price.toStringAsFixed(2)}"),
+      leading: SizedBox(
+        width: 50,
+        child: Text("\$ ${product.price.toStringAsFixed(2)}")),
       trailing: IconButton(
           onPressed: () {
+            // TODO: agregar validación y mensaje de agregado
             cartBloc.addItemToCart(product.id);
           },
           icon: const Icon(Icons.shopping_cart)),
